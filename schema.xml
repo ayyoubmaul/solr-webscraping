@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema name="example_core" version="1.6">
+  <fields>
+    <field name="id" type="string" indexed="true" stored="true" required="true" multiValued="false" />
+    <field name="title" type="text_general" indexed="true" stored="true" />
+    <field name="content" type="text_general" indexed="true" stored="true" />
+  </fields>
+  <uniqueKey>id</uniqueKey>
+</schema>

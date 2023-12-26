@@ -1,0 +1,16 @@
+{
+    "add-field": [
+        {
+            "name": "title",
+            "type": "text_general",
+            "indexed": true,
+            "stored": true
+        },
+        {
+            "name": "content",
+            "type": "text_general",
+            "indexed": true,
+            "stored": true
+        }
+    ]
+}
