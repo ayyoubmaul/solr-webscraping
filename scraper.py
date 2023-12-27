@@ -28,7 +28,7 @@ schema = [
         "stored": True
     }
 ]
-solr.create(core_name, schema='/Users/ayyoub/gitrepo/solr-webscraping/schema.xml')
+solr.create(core_name, schema='schema.xml')
 # Define the schema for the core
 # solr_url = f'http://localhost:8983/solr/{core_name}/'
 
@@ -39,7 +39,7 @@ solr.create(core_name, schema='/Users/ayyoub/gitrepo/solr-webscraping/schema.xml
 
 
 """
-curl -X POST -H 'Content-type:application/json' --data-binary '@/Users/ayyoub/gitrepo/solr-webscraping/schema.json' http://localhost:8983/solr/example_core/schema
+curl -X POST -H 'Content-type:application/json' --data-binary '@schema.json' http://localhost:8983/solr/example_core/schema
 """
 
 # Add document
@@ -67,5 +67,5 @@ curl -X POST -H 'Content-type:application/json' --data-binary '@/Users/ayyoub/gi
 """
 
 """
-curl -X POST -H 'Content-Type: application/json' 'http://localhost:8983/solr/example_core/update?commit=true' --data-binary '@/Users/ayyoub/gitrepo/solr-webscraping/data.json'
+curl -X POST -H 'Content-Type: application/json' 'http://localhost:8983/solr/example_core/update?commit=true' --data-binary '@data.json'
 """
